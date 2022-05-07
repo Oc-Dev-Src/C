@@ -1,6 +1,7 @@
 #include <string.h>
 #include <stdio.h>
 #include <ctype.h>
+
 char* MOT_CH(int N, char* CH)
 {
 	/* Variables locales */
@@ -19,11 +20,13 @@ char* MOT_CH(int N, char* CH)
 			}
 	return CH;
 }
+
 int main()
 {
 	int x;
 	char* MOT_CH(int N, char* CH);
 	char maChaine[] = "Programmation C avec Visual Studio 2017";
 	printf("%p", MOT_CH(3, maChaine));
-	scanf("%d", &x); return 0;
+	scanf_s("%d", &x); 
+	return 0;
 }
